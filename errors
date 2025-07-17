@@ -1,0 +1,83 @@
+checking for unistd.h... yes
+checking mpi.h usability... no
+checking mpi.h presence... no
+checking for mpi.h... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating testing/Makefile
+config.status: creating include/hplconfig.h
+config.status: include/hplconfig.h is unchanged
+config.status: executing depfiles commands
+Making all in src
+make[1]: Entering directory '/home/avlakulakov/HPP/hpl-1.0.0/hpl-2.3/src'
+depbase=`echo auxil/HPL_dlatcpy.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H -I. -I../include  -I../../include   -g -O2 -MT auxil/HPL_dlatcpy.o -MD -MP -MF $depbase.Tpo -c -o auxil/HPL_dlatcpy.o auxil/HPL_dlatcpy.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo auxil/HPL_fprintf.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H -I. -I../include  -I../../include   -g -O2 -MT auxil/HPL_fprintf.o -MD -MP -MF $depbase.Tpo -c -o auxil/HPL_fprintf.o auxil/HPL_fprintf.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo auxil/HPL_dlacpy.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H -I. -I../include  -I../../include   -g -O2 -MT auxil/HPL_dlacpy.o -MD -MP -MF $depbase.Tpo -c -o auxil/HPL_dlacpy.o auxil/HPL_dlacpy.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo auxil/HPL_dlamch.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H -I. -I../include  -I../../include   -g -O2 -MT auxil/HPL_dlamch.o -MD -MP -MF $depbase.Tpo -c -o auxil/HPL_dlamch.o auxil/HPL_dlamch.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo blas/HPL_dscal.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H -I. -I../include  -I../../include   -g -O2 -MT blas/HPL_dscal.o -MD -MP -MF $depbase.Tpo -c -o blas/HPL_dscal.o blas/HPL_dscal.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo blas/HPL_dtrsm.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H -I. -I../include  -I../../include   -g -O2 -MT blas/HPL_dtrsm.o -MD -MP -MF $depbase.Tpo -c -o blas/HPL_dtrsm.o blas/HPL_dtrsm.c &&\
+mv -f $depbase.Tpo $depbase.Po
+In file included from ../include/hpl_pmisc.h:54,
+                 from ../include/hpl.h:80,
+                 from auxil/HPL_dlatcpy.c:50:
+../include/mpi.h:266:14: fatal error: mpi_portable_platform.h: No such file or directory
+  266 | #    include "mpi_portable_platform.h"
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ../include/hpl_pmisc.h:54,
+                 from ../include/hpl.h:80,
+                 from auxil/HPL_fprintf.c:50:
+../include/mpi.h:266:14: fatal error: mpi_portable_platform.h: No such file or directory
+  266 | #    include "mpi_portable_platform.h"
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [Makefile:910: auxil/HPL_dlatcpy.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: *** [Makefile:910: auxil/HPL_fprintf.o] Error 1
+In file included from ../include/hpl_pmisc.h:54,
+                 from ../include/hpl.h:80,
+                 from auxil/HPL_dlacpy.c:50:
+../include/mpi.h:266:14: fatal error: mpi_portable_platform.h: No such file or directory
+  266 | #    include "mpi_portable_platform.h"
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [Makefile:910: auxil/HPL_dlacpy.o] Error 1
+In file included from ../include/hpl_pmisc.h:54,
+                 from ../include/hpl.h:80,
+                 from auxil/HPL_dlamch.c:50:
+../include/mpi.h:266:14: fatal error: mpi_portable_platform.h: No such file or directory
+  266 | #    include "mpi_portable_platform.h"
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [Makefile:910: auxil/HPL_dlamch.o] Error 1
+In file included from ../include/hpl_pmisc.h:54,
+                 from ../include/hpl.h:80,
+                 from blas/HPL_dscal.c:50:
+../include/mpi.h:266:14: fatal error: mpi_portable_platform.h: No such file or directory
+  266 | #    include "mpi_portable_platform.h"
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [Makefile:910: blas/HPL_dscal.o] Error 1
+In file included from ../include/hpl_pmisc.h:54,
+                 from ../include/hpl.h:80,
+                 from blas/HPL_dtrsm.c:50:
+../include/mpi.h:266:14: fatal error: mpi_portable_platform.h: No such file or directory
+  266 | #    include "mpi_portable_platform.h"
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [Makefile:910: blas/HPL_dtrsm.o] Error 1
+make[1]: Leaving directory '/home/avlakulakov/HPP/hpl-1.0.0/hpl-2.3/src'
+make: *** [Makefile:355: all-recursive] Error 1
